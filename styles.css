@@ -1,3 +1,32 @@
 body {
     background-color: slategrey;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+}
+
+body, h1, h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.between {
+    justify-content: space-between;
+}
+
+.links {
+    padding: 10vh 10vw;
+}
+
+.links:hover {
+    background-color: cadetblue;
 }
