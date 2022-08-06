@@ -1,12 +1,24 @@
 body {
-    background-color: slategrey;
     font-family: 'Courier New', Courier, monospace;
-    height: 100vh;
 }
 
 body, h1, h3 {
     margin: 0;
-    font-weight: normal;
+}
+
+h1 {
+    font-size: calc(64px + 2vw);
+    color: hsl(209, 13%, 25%);
+}
+
+h3 {
+    font-size: calc(16px + 2vw);
+    color: hsl(210, 13%, 50%);
+
+}
+
+.main {
+    height: 100vh;
 }
 
 .flex {
@@ -18,15 +30,12 @@ body, h1, h3 {
 .center {
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .between {
     justify-content: space-between;
 }
 
-.links {
-    padding: 10vh 10vw;
-}
-
-.links:hover {
-    background-color: cadetblue;
+.gap {
+    gap: calc(32px + 2vw);
 }
