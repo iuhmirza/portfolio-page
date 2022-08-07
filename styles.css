@@ -1,3 +1,5 @@
+/*styles on html elements*/
+
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #8BC6EC;
@@ -11,38 +13,8 @@ body, h1, h3, p, a , ul, li {
     list-style: none;
 }
 
-h1 {
-    font-size: calc(64px + 2vw);
-    color: hsl(210, 13%, 25%);
-}
+/*atomic css*/
 
-h3 {
-    font-size: calc(12px + 1vw);
-    color: hsl(210, 13%, 15%);
-}
-
-a {
-    font-size: calc(16px + 2vw);
-    color: hsl(210, 13%, 50%);
-    font-weight: 900;
-}
-
-a:hover {
-    background-color: hsl(210, 26%, 50%);
-    color: hsl(210, 13%, 90%);
-}
-
-h3 {
-    padding: 4px;
-}
-
-.grow {
-    transition: all .2s ease-in-out
-}
-
-.grow:hover {
-    transform: scale(1.1);
-}
 .height {
     height: 100vh;
 }
@@ -77,10 +49,42 @@ h3 {
     gap: calc(64px + 4vw);
 }
 
+.grow {
+    transition: all .2s ease-in-out
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
 .gray {
     background-color: hsl(210, 13%, 90%);
 }
 
 .pinky:hover {
     color: hsl(300, 26%, 50%)
+}
+
+/*classes for particular elements*/
+
+.name {
+    font-size: calc(64px + 2vw);
+    color: hsl(210, 13%, 25%);
+}
+
+.hero-links {
+    font-size: calc(16px + 2vw);
+    color: hsl(210, 13%, 50%);
+    font-weight: 900;
+}
+
+.hero-links:hover {
+    background-color: hsl(210, 26%, 50%);
+    color: hsl(210, 13%, 90%);
+}
+
+.sub-heading {
+    font-size: calc(12px + 1vw);
+    color: hsl(210, 13%, 15%);
+    padding: 4px;
 }
