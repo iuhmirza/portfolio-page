@@ -1,9 +1,11 @@
 /*styles on html elements*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    font-family: monospace;
     font-size: calc(12px + 1vw);
 }
 
@@ -16,6 +18,11 @@ body, h1, h3, p, a , ul, li {
 
 /*atomic css*/
 
+
+.gradient {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
 .height {
     height: 100vh;
 }
@@ -68,7 +75,7 @@ body, h1, h3, p, a , ul, li {
 }
 
 .grow:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .gray {
@@ -88,17 +95,24 @@ body, h1, h3, p, a , ul, li {
 
 .hero-links {
     font-size: calc(16px + 2vw);
-    color: hsl(210, 13%, 50%);
+    color: hsl(210, 13%, 45%);
     font-weight: 900;
+;
 }
 
 .hero-links:hover {
     background-color: hsl(210, 26%, 50%);
     color: hsl(210, 13%, 90%);
+    box-shadow: 2px 2px 1px hsl(204, 72%, 50%)
 }
 
 .sub-heading {
     font-size: calc(12px + 2vw);
     color: hsl(210, 13%, 15%);
     padding: 4px;
+}
+
+.card {
+    width: calc(200px + 4vw);
+    height: auto;
 }
