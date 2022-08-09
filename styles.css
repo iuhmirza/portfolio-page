@@ -9,9 +9,10 @@ body {
     font-size: calc(12px + 1vw);
 }
 
-body, h1, h3, p, a , ul, li {
+body, h1, h3, p, a , ul, li, button {
     margin: 0;
     padding: 0;
+    border: none;
     text-decoration: none;
     list-style: none;
 }
