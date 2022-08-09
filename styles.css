@@ -4,6 +4,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    font-size: calc(12px + 1vw);
 }
 
 body, h1, h3, p, a , ul, li {
@@ -30,6 +31,11 @@ body, h1, h3, p, a , ul, li {
     align-items: center;
     text-align: center;
 }
+
+.left {
+    text-align: left;
+}
+
 .between {
     justify-content: space-between;
 }
@@ -41,12 +47,20 @@ body, h1, h3, p, a , ul, li {
     flex-wrap: wrap;
 }
 
+.padding {
+    padding: calc(4px + 0.5vw)
+}
+
 .gap {
     gap: 32px;
 }
 
 .gap-xl {
     gap: calc(64px + 4vw);
+}
+
+.border {
+    border-radius: calc(4px + 0.5vw)
 }
 
 .grow {
@@ -84,7 +98,7 @@ body, h1, h3, p, a , ul, li {
 }
 
 .sub-heading {
-    font-size: calc(12px + 1vw);
+    font-size: calc(12px + 2vw);
     color: hsl(210, 13%, 15%);
     padding: 4px;
 }
