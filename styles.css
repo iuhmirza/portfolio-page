@@ -9,12 +9,16 @@ body {
     font-size: calc(12px + 1vw);
 }
 
-body, h1, h3, p, a , ul, li, button {
+body, h1, h3, p, a , ul, li, button, img {
     margin: 0;
     padding: 0;
     border: none;
     text-decoration: none;
     list-style: none;
+}
+
+a:visited {
+    color: inherit;
 }
 
 /*atomic css*/
@@ -60,7 +64,7 @@ body, h1, h3, p, a , ul, li, button {
 }
 
 .gap {
-    gap: 32px;
+    gap: calc(16px + 2vw);
 }
 
 .gap-xl {
@@ -69,6 +73,11 @@ body, h1, h3, p, a , ul, li, button {
 
 .border {
     border-radius: calc(4px + 0.5vw)
+}
+
+.icon {
+    width: calc(16px + 1vw);
+    height: auto;
 }
 
 .grow {
@@ -137,4 +146,14 @@ body, h1, h3, p, a , ul, li, button {
     background-color: hsl(210, 26%, 50%);
     color: hsl(210, 13%, 90%);
     box-shadow: 2px 2px 1px hsl(204, 72%, 50%)
+}
+
+.c-button {
+
+}
+
+.c-button:hover {
+    background-color: hsl(210, 13%, 45%);
+    color: hsl(210, 13%, 90%);
+    border-radius: 4px;
 }
