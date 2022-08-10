@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
-    <script src = "scripts.js"></script>
+    <script src = "scripts.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirza, I</title>
 </head>
@@ -21,15 +21,13 @@
     <div id="about-me" class = "flex gray height center column">
         <div class = "flex wrap center gap-xl">
             <img class="selfie" src="img/me.png" alt="picture of handsome young man">
-            <div>
+            <div class="flex gap column center">
                 <h3 class="sub-heading">about me</h3>
-                <p>i was born and raised in <span style="display: inline-block" class="grow">luton</span></p>
-                <p>i teach myself programming</p>
-                <p>i love learning</p>
-                <p>i want to be the very best</p>
+                <p class="fact">i'm from luton</p>
+                <button class="rf-button grow" onclick="randomFact()">random fact</button>
     
             </div>
-            <div>
+            <div class = "flex gap column center">
                 <h3 class="sub-heading">mad skillz</h3>
                 <ul>
                     <li class="grow">html & css</li>
