@@ -17,10 +17,6 @@ body, h1, h3, p, a , ul, li, button, img {
     list-style: none;
 }
 
-a:visited {
-    color: inherit;
-}
-
 /*atomic css*/
 
 
@@ -148,9 +144,6 @@ a:visited {
     box-shadow: 2px 2px 1px hsl(204, 72%, 50%)
 }
 
-.c-button {
-
-}
 
 .c-button:hover {
     background-color: hsl(210, 13%, 45%);
