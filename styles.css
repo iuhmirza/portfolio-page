@@ -117,3 +117,8 @@ body, h1, h3, p, a , ul, li, button {
     width: calc(200px + 4vw);
     height: auto;
 }
+
+.selfie {
+    width: calc(100px + 2vw);
+    border-radius: calc(200px + 4vw);
+}
