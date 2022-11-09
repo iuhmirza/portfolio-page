@@ -76,6 +76,10 @@ body, h1, h3, p, a , ul, li, button, img {
     border-radius: calc(4px + 0.5vw)
 }
 
+.width {
+    width: 100%
+}
+
 .icon {
     width: calc(16px + 1vw);
     height: auto;
@@ -154,4 +158,8 @@ body, h1, h3, p, a , ul, li, button, img {
     background-color: hsl(210, 13%, 45%);
     color: hsl(210, 13%, 90%);
     border-radius: 4px;
+}
+
+img {
+    max-width: 200px;
 }
