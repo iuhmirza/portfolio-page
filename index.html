@@ -1,64 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+
     <link rel="icon" href="img/icon.png" type="image/png">
-    <script src = "scripts.js" defer></script>
+    <script src="scripts.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>ibtisam's website</title>
 </head>
-<body class="flex column stretch">
-    <div class="flex column center gap height gradient">
-        <h1 class="name">ibtisam m<span class="pinky">i</span>rza</h1>
-        <div class="flex center gap wrap">
-            <a class="hero-links padding grow" href="#about-me">about me</a>
-            <a class="hero-links padding grow" href="projects.html" target="_blank">projects</a>
-            <a class="hero-links padding grow" href="#experience">experience</a>
-            <a class="hero-links padding grow" href="#contact">contact</a>
+
+<body class="">
+    <div class="navbar gradient navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="text-center mx-3 navbar-brand">
+                <h1 class="name fs-6">ibtisam</h1>
+                <h1 class="name fs-6">m<span class="pinky">i</span>rza</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="fs-6 nav-link hero-links text-decoration-none" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="fs-6 nav-link hero-links text-decoration-none" href="#about-me">about me</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="fs-6 nav-link hero-links text-decoration-none" href="projects.html">projects</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="fs-6 nav-link hero-links text-decoration-none" href="#experience">experience</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="fs-6 nav-link hero-links text-decoration-none" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div id="about-me" class = "flex gray height center column">
-        <div class = "flex wrap center gap-xl">
-            <img class="selfie grow" src="img/me.png" alt="picture of handsome young man">
-            <div class="flex gap column center">
+    <div id="about-me" class="">
+        <div class="">
+            <img class="selfie" src="img/me.png" alt="picture of handsome young man">
+            <div class="">
                 <h3 class="sub-heading">about me</h3>
                 <p class="fact">i'm from luton</p>
-                <button class="rf-button grow" onclick="randomFact()">random fact</button>
-    
+                <button class="rf-button " onclick="randomFact()">random fact</button>
+
             </div>
-            <div class = "flex gap column between width">
+            <div class="">
                 <h3 class="sub-heading">skills</h3>
-                <div class="flex width gap row center">
+                <div class="">
                     <ul>
-                        <li class="grow">html & css</li>
-                        <li class="grow">javascript</li>
-                        <li class="grow">reactjs</li>
-                        <li class="grow">express</li>
-                        <li class="grow">node.js</li>
+                        <li class="">html & css</li>
+                        <li class="">javascript</li>
+                        <li class="">reactjs</li>
+                        <li class="">express</li>
+                        <li class="">node.js</li>
                     </ul>
                     <ul>
-                        <li class="grow">mongoDB</li>
-                        <li class="grow">python</li>
-                        <li class="grow">cypress</li>
-                        <li class="grow">jest</li>
-                        <li class="grow">git</li>
+                        <li class="">mongoDB</li>
+                        <li class="">python</li>
+                        <li class="">cypress</li>
+                        <li class="">jest</li>
+                        <li class="">git</li>
                     </ul>
                 </div>
             </div>
         </div>
 
     </div>
-    <div id="experience" class="flex height center gradient padding gap">
-        <div class="flex gray column border padding gap">
+    <div id="experience" class="gradient">
+        <div class="gray border">
             <h3 class="sub-heading">experience</h3>
-            <div class="flex between">
+            <div class="">
                 <p>Jarral Motors</p>
                 <p>Sales Associate</p>
                 <p>Aug 20 - Present</p>
             </div>
-            <div class="flex column left">
+            <div class="">
                 <p>led a team of 6 mechanics generating daily revenues of £1100+</p>
                 <p>conducted 1-to-1 sales to over 200 customers weekly</p>
                 <p>organised inventory of 8 different product categories</p>
@@ -66,13 +94,19 @@
             </div>
         </div>
     </div>
-    <div id="contact" class="flex gray">
-        <div class="flex stretch gap padding">
-            <h3 class="sub-heading padding">contact</h3>
-            <a class = "c-button padding" href="https://uk.linkedin.com/in/ibtisam-mirza-08ab68205"><img class = "icon" src="img/linkedin.png" draggable="false"> LinkedIn</a>
-            <a class = "c-button padding" href="https://github.com/iuhmirza"><img class = "icon" src="img/github.svg" draggable="false"> GitHub</a>
+    <div id="contact" class="gray">
+        <div class="">
+            <h3 class="sub-heading">contact</h3>
+            <a class="c-button " href="https://uk.linkedin.com/in/ibtisam-mirza-08ab68205"><img class="icon"
+                    src="img/linkedin.png" draggable="false"> LinkedIn</a>
+            <a class="c-button " href="https://github.com/iuhmirza"><img class="icon" src="img/github.svg"
+                    draggable="false"> GitHub</a>
             <li></li>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
