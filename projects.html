@@ -1,40 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img/icon.png" type="image/png">
-    <script src = "scripts.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projects</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>projects</title>
 </head>
-<body class="flex center column height gradient">
-    <div class="flex gap wrap center stretch">
-        <button class = "flex column between centre-align card gray border padding grow" onclick="window.open('https://bloglist-iuhmirza.fly.dev/'), 'blank'">
-            <h3 class="sub-heading">blog list</h3>
-            <img src="img/blog-list.png" alt="a">
-        </button>
-        <button class = "flex column between centre-align card gray border padding grow" onclick="window.open('https://countries-iuhmirza.netlify.app/'), 'blank'">
-            <h3 class="sub-heading">countries</h3>
-            <img src="img/countries.png" alt="a">
-        </button>
-        <button class = "flex column between centre-align card gray border padding grow" onclick="window.open('https://phonebook-iuhmirza.fly.dev/'), 'blank'">
-            <h3 class="sub-heading">phonebook</h3>
-            <img src="img/phonebook.png" alt="a">
-        </button>
-        <button class = "flex column between centre-align card gray border padding grow" onclick="window.open('https://iuhmirza.github.io/odin-etch-a-sketch'), 'blank'">
-            <h3 class="sub-heading">etch a sketch</h3>
-            <img src="img/etch-a-sketch.png" alt="a">
-        </button>
-        <button class = "flex column between centre-align card gray border padding grow" onclick="window.open('https://iuhmirza.github.io/react-tic-tac-toe'), 'blank'">
-            <h3 class="sub-heading">tic tac toe</h3>
-            <img src="img/tic-tac-toe.png" alt="b">
-        </button>
-        <button class = "flex column between centre-align card gray border padding grow" onclick="window.open('https://iuhmirza.github.io/odin-rock-paper-scissors'), 'blank'">
-            <h3 class="sub-heading">rock paper scissors</h3>
-            <img src="img/rock-paper-scissors.png" alt="c">
-        </button>
+
+<body>
+  <div id="about-me" class="navbar navbar-expand-lg sticky-top navbar-color">
+    <div class="container">
+      <div class="text-center mx-3 navbar-brand">
+        <p class="name fs-4 my-0 ">IM</p>
+      </div>
+      <div class="navbar-toggler" type="div" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-2">
+            <a class="fs-6 nav-link hero-links text-decoration-none" href="index.html">home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="fs-6 nav-link hero-links text-decoration-none" href="about-me.html">about me</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="fs-6 nav-link hero-links text-decoration-none" href="projects.html">projects</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="fs-6 nav-link hero-links text-decoration-none" href="experience.html">experience</a>
+          </li>
+          <li class="list-unstyled nav-item mx-2 dropdown">
+            <a class="nav-link hero-links text-decoration-none dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              contact
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item d-flex align-items-center" href="https://github.com/iuhmirza">
+                  <img class="icon me-2" src="img/github.svg" draggable="false">
+                  <span>GitHub</span>
+                </a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="https://linkedin.com/in/iuhmirza">
+                  <img class="icon me-2" src="img/linkedin.png" draggable="false">
+                  <span>LinkedIn</span>
+                </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <h1 class="text-center my-3">projects</h1>
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 m-lg-2">
+      <a class="project d-flex flex-column text-decoration-none text-center" href="http://176.58.114.83/"
+        target="_blank">
+        <h4 class="name m-0 p-1">bubble</h4>
+        <img src="img/bubble.png" alt="a">
+      </a>
+      <a class="project d-flex flex-column text-decoration-none text-center" href="https://bloglist-iuhmirza.fly.dev/"
+        target="_blank">
+        <h4 class="name m-0 p-1">blog list</h4>
+        <img src="img/blog-list.png" alt="a">
+      </a>
+      <a class="project d-flex flex-column text-decoration-none text-center" href="https://github.com/iuhmirza/dodge"
+        target="_blank">
+        <h4 class="name m-0 p-1">dodge</h4>
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/JpjuTbdsjs0?controls=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </a>
+      <a class="project d-flex flex-column text-decoration-none text-center"
+        href="https://iuhmirza.github.io/odin-etch-a-sketch/" target="_blank">
+        <h4 class="name m-0 p-1">etch-a-sketch</h4>
+        <img src="img/etch-a-sketch.png" alt="a">
+      </a>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

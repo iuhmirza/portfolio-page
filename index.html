@@ -1,112 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-
-    <link rel="icon" href="img/icon.png" type="image/png">
-    <script src="scripts.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ibtisam's website</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ibtisam's website</title>
 </head>
 
-<body class="">
-    <div class="navbar gradient navbar-expand-lg">
-        <div class="container-fluid">
-            <div class="text-center mx-3 navbar-brand">
-                <h1 class="name fs-6">ibtisam</h1>
-                <h1 class="name fs-6">m<span class="pinky">i</span>rza</h1>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-2">
-                        <a class="fs-6 nav-link hero-links text-decoration-none" href="index.html">home</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="fs-6 nav-link hero-links text-decoration-none" href="#about-me">about me</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="fs-6 nav-link hero-links text-decoration-none" href="projects.html">projects</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="fs-6 nav-link hero-links text-decoration-none" href="#experience">experience</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="fs-6 nav-link hero-links text-decoration-none" href="#contact">contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<body>
+  <div id="home" class="d-flex flex-column justify-content-center height scroll-section home">
+    <div class="container-fluid d-flex flex-column align-items-center px-2 py-4 navbar-color">
+      <p class="display-1 name">Ibtisam Mirza</p>
+      <div class="d-flex gap-4 display-6 flex-column flex-md-row">
+        <a class="text-decoration-none hero-links " href="about-me.html">about me</a>
+        <a class="text-decoration-none hero-links " href="projects.html">projects</a>
+        <a class="text-decoration-none hero-links " href="experience.html">experience</a>
+        <li class="list-unstyled nav-item mx-2 dropdown">
+          <a class="nav-link hero-links text-decoration-none dropdown-toggle" href="#" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            contact
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item d-flex align-items-center" href="https://github.com/iuhmirza">
+                <img class="icon me-2" src="img/github.svg" draggable="false">
+                <span>GitHub</span>
+              </a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="https://linkedin.com/in/iuhmirza">
+                <img class="icon me-2" src="img/linkedin.png" draggable="false">
+                <span>LinkedIn</span>
+              </a></li>
+          </ul>
+        </li>
+      </div>
     </div>
-    <div id="about-me" class="">
-        <div class="">
-            <img class="selfie" src="img/me.png" alt="picture of handsome young man">
-            <div class="">
-                <h3 class="sub-heading">about me</h3>
-                <p class="fact">i'm from luton</p>
-                <button class="rf-button " onclick="randomFact()">random fact</button>
-
-            </div>
-            <div class="">
-                <h3 class="sub-heading">skills</h3>
-                <div class="">
-                    <ul>
-                        <li class="">html & css</li>
-                        <li class="">javascript</li>
-                        <li class="">reactjs</li>
-                        <li class="">express</li>
-                        <li class="">node.js</li>
-                    </ul>
-                    <ul>
-                        <li class="">mongoDB</li>
-                        <li class="">python</li>
-                        <li class="">cypress</li>
-                        <li class="">jest</li>
-                        <li class="">git</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div id="experience" class="gradient">
-        <div class="gray border">
-            <h3 class="sub-heading">experience</h3>
-            <div class="">
-                <p>Jarral Motors</p>
-                <p>Sales Associate</p>
-                <p>Aug 20 - Present</p>
-            </div>
-            <div class="">
-                <p>led a team of 6 mechanics generating daily revenues of £1100+</p>
-                <p>conducted 1-to-1 sales to over 200 customers weekly</p>
-                <p>organised inventory of 8 different product categories</p>
-                <p>arranged purchase of 1000 pieces of stock monthly</p>
-            </div>
-        </div>
-    </div>
-    <div id="contact" class="gray">
-        <div class="">
-            <h3 class="sub-heading">contact</h3>
-            <a class="c-button " href="https://uk.linkedin.com/in/ibtisam-mirza-08ab68205"><img class="icon"
-                    src="img/linkedin.png" draggable="false"> LinkedIn</a>
-            <a class="c-button " href="https://github.com/iuhmirza"><img class="icon" src="img/github.svg"
-                    draggable="false"> GitHub</a>
-            <li></li>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  </div>
 </body>
 
 </html>

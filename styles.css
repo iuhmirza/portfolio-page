@@ -1,146 +1,67 @@
-/*atomic css*/
-
-
-.gradient {
-    background-color: hsl(216, 72%, 74%);
-    background-image: linear-gradient(135deg, hsl(216, 72%, 74%) 0%, #9599E2 100%);
-}
 .height {
-    height: 100vh;
+  height: 100vh
 }
 
-.flex {
-    display: flex;
-}
-.column {
-    flex-direction: column;
-}
-.center {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.badge {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  filter: saturate(0);
 }
 
-.left {
-    text-align: left;
+.badge:hover {
+  filter: saturate(1);
 }
 
-.between {
-    justify-content: space-between;
-}
-.centre-align {
-    align-items: center;
+.saturated {
+  filter: saturate(1)
 }
 
-
-.stretch {
-    align-items: stretch;
+.navbar-color {
+  background-color: hsla(237, 57%, 5%, 90%);
 }
 
-.wrap {
-    flex-wrap: wrap;
-}
-
-.padding {
-    padding: calc(4px + 0.5vw)
-}
-
-.gap {
-    gap: calc(16px + 2vw);
-}
-
-.gap-xl {
-    gap: calc(64px + 4vw);
-}
-
-.border {
-    border-radius: calc(4px + 0.5vw)
-}
-
-.width {
-    width: 100%
+.home {
+  background-image: url('img/chicago.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .icon {
-    width: calc(16px + 1vw);
-    height: auto;
+  width: calc(16px + 1vw);
+  height: auto;
 }
-
-.grow {
-    transition: all .2s ease-in-out
-}
-
-.grow:hover {
-    transform: scale(1.05);
-}
-
-.grow:active {
-    transform: scale(1);
-}
-
-.gray {
-    background-color: hsl(210, 13%, 90%);
-}
-
-.pinky:hover {
-    color: hsl(300, 26%, 50%)
-}
-
-/*classes for particular elements*/
 
 .name {
-    color: hsl(210, 13%, 100%);
+  color: hsl(210, 13%, 100%);
 }
 
 .hero-links {
-    color: hsl(210, 13%, 100%);
-    font-weight: 500;
+  color: hsl(210, 13%, 100%);
 }
 
 .hero-links:hover {
-    color: hsl(210, 13%, 90%);
-}
-
-#hero-links:hover {
-    background-color: hsl(210, 26%, 50%);
-    color: hsl(210, 13%, 90%);
-    box-shadow: 2px 2px 1px hsl(204, 72%, 50%)
-}
-
-.sub-heading {
-    color: hsl(210, 13%, 15%);
-}
-
-.card {
-    width: calc(200px + 4vw);
-    height: auto;
+  color: hsl(210, 13%, 60%);
 }
 
 .selfie {
-    width: calc(100px + 2vw);
-    border-radius: calc(200px + 4vw);
+  width: calc(100px + 2vw);
+  border-radius: calc(200px + 4vw);
 }
 
-.rf-button {
-    padding: 4px;
-    background-color: hsl(210, 26%, 50%);
-    color: hsl(210, 13%, 90%);
-    box-shadow: 2px 2px 1px hsl(204, 72%, 50%)
+.project {
+  background-color: hsla(237, 57%, 5%, 90%);
+  border: 1px solid hsla(237, 57%, 5%, 90%);
 }
 
-.rf-button:hover {
-    background-color: hsl(210, 26%, 50%);
-    color: hsl(210, 13%, 90%);
-    box-shadow: 2px 2px 1px hsl(204, 72%, 50%)
-}
-
-
-.c-button:hover {
-    background-color: hsl(210, 13%, 45%);
-    color: hsl(210, 13%, 90%);
-    border-radius: 4px;
+.project:hover {
+  background-color: hsla(237, 57%, 5%, 100%);
 }
 
 img {
-    max-width: 200px;
+  max-width: 200px;
 }
