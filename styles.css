@@ -25,7 +25,8 @@
 }
 
 .home {
-  background-image: url('img/chicago.png');
+  background: rgb(234,223,255);
+  background: linear-gradient(180deg, rgba(234,223,255,1) 20%, rgba(255,204,153,1) 100%); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
