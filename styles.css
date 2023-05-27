@@ -66,3 +66,9 @@
 img {
   max-width: 200px;
 }
+
+.game-iframe {
+  width: 960px;
+  height: 600px;
+}
+
